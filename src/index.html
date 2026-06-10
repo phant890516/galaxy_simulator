@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Galaxy Generator</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <canvas class="webgl"></canvas>
+
+    <div class="overlay">
+        <h1>銀河シミュレーター</h1>
+        <p class="hint">
+            左ドラッグ：視点回転　｜　ホイール：ズーム　｜　右ドラッグ：平行移動
+        </p>
+    </div>
+
+    <button class="gui-toggle" type="button" aria-label="コントロールパネルの表示/非表示">⚙ コントロールパネル</button>
+
     <script type="module" src="./script.js"></script>
 </body>
 </html>
